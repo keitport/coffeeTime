@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		2345DE7C24AB90BE007723E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2345DE7A24AB90BE007723E0 /* Main.storyboard */; };
 		2345DE7E24AB90BF007723E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2345DE7D24AB90BF007723E0 /* Assets.xcassets */; };
 		2345DE8124AB90BF007723E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2345DE7F24AB90BF007723E0 /* LaunchScreen.storyboard */; };
+		2345DE8924AB947A007723E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2345DE8824AB947A007723E0 /* GoogleService-Info.plist */; };
+		2345DE8C24AC6786007723E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345DE8A24AC6786007723E0 /* LoginViewController.swift */; };
+		2345DE8D24AC6786007723E0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2345DE8B24AC6786007723E0 /* LoginViewController.xib */; };
+		E62227B23B3FED4A2C584D00 /* Pods_coffeeTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17567089B997E47DC4EB1D1D /* Pods_coffeeTime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17567089B997E47DC4EB1D1D /* Pods_coffeeTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coffeeTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2345DE7124AB90BE007723E0 /* coffeeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffeeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2345DE7424AB90BE007723E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2345DE7624AB90BE007723E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		2345DE7D24AB90BF007723E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2345DE8024AB90BF007723E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2345DE8224AB90BF007723E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2345DE8824AB947A007723E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2345DE8A24AC6786007723E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2345DE8B24AC6786007723E0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3B9699982A304A03788DC464 /* Pods-coffeeTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeeTime.debug.xcconfig"; path = "Target Support Files/Pods-coffeeTime/Pods-coffeeTime.debug.xcconfig"; sourceTree = "<group>"; };
+		C2D5CC488AC4EC6B6932391F /* Pods-coffeeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeeTime.release.xcconfig"; path = "Target Support Files/Pods-coffeeTime/Pods-coffeeTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62227B23B3FED4A2C584D00 /* Pods_coffeeTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143EBBA2A11B655FA84699C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17567089B997E47DC4EB1D1D /* Pods_coffeeTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2345DE6824AB90BE007723E0 = {
 			isa = PBXGroup;
 			children = (
 				2345DE7324AB90BE007723E0 /* coffeeTime */,
 				2345DE7224AB90BE007723E0 /* Products */,
+				9EC3841A840E60B0FAB87C2D /* Pods */,
+				143EBBA2A11B655FA84699C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +79,25 @@
 			children = (
 				2345DE7424AB90BE007723E0 /* AppDelegate.swift */,
 				2345DE7624AB90BE007723E0 /* SceneDelegate.swift */,
+				2345DE8A24AC6786007723E0 /* LoginViewController.swift */,
+				2345DE8B24AC6786007723E0 /* LoginViewController.xib */,
 				2345DE7824AB90BE007723E0 /* ViewController.swift */,
 				2345DE7A24AB90BE007723E0 /* Main.storyboard */,
 				2345DE7D24AB90BF007723E0 /* Assets.xcassets */,
 				2345DE7F24AB90BF007723E0 /* LaunchScreen.storyboard */,
 				2345DE8224AB90BF007723E0 /* Info.plist */,
+				2345DE8824AB947A007723E0 /* GoogleService-Info.plist */,
 			);
 			path = coffeeTime;
+			sourceTree = "<group>";
+		};
+		9EC3841A840E60B0FAB87C2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B9699982A304A03788DC464 /* Pods-coffeeTime.debug.xcconfig */,
+				C2D5CC488AC4EC6B6932391F /* Pods-coffeeTime.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2345DE8524AB90BF007723E0 /* Build configuration list for PBXNativeTarget "coffeeTime" */;
 			buildPhases = (
+				F7920C07C587A4DBAE0F33BD /* [CP] Check Pods Manifest.lock */,
 				2345DE6D24AB90BE007723E0 /* Sources */,
 				2345DE6E24AB90BE007723E0 /* Frameworks */,
 				2345DE6F24AB90BE007723E0 /* Resources */,
+				0B0C50903CD44EA0A4A4A65D /* [CP] Embed Pods Frameworks */,
+				364F089C6C5E059991ADEF62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,7 +161,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2345DE8D24AC6786007723E0 /* LoginViewController.xib in Resources */,
 				2345DE8124AB90BF007723E0 /* LaunchScreen.storyboard in Resources */,
+				2345DE8924AB947A007723E0 /* GoogleService-Info.plist in Resources */,
 				2345DE7E24AB90BF007723E0 /* Assets.xcassets in Resources */,
 				2345DE7C24AB90BE007723E0 /* Main.storyboard in Resources */,
 			);
@@ -133,11 +171,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B0C50903CD44EA0A4A4A65D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffeeTime/Pods-coffeeTime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffeeTime/Pods-coffeeTime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coffeeTime/Pods-coffeeTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		364F089C6C5E059991ADEF62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffeeTime/Pods-coffeeTime-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffeeTime/Pods-coffeeTime-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coffeeTime/Pods-coffeeTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7920C07C587A4DBAE0F33BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coffeeTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2345DE6D24AB90BE007723E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2345DE8C24AC6786007723E0 /* LoginViewController.swift in Sources */,
 				2345DE7924AB90BE007723E0 /* ViewController.swift in Sources */,
 				2345DE7524AB90BE007723E0 /* AppDelegate.swift in Sources */,
 				2345DE7724AB90BE007723E0 /* SceneDelegate.swift in Sources */,
@@ -282,6 +380,7 @@
 		};
 		2345DE8624AB90BF007723E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9699982A304A03788DC464 /* Pods-coffeeTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +399,7 @@
 		};
 		2345DE8724AB90BF007723E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D5CC488AC4EC6B6932391F /* Pods-coffeeTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
