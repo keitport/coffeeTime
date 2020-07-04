@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--timeInterval-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coffeeTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +94,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="A4W-dE-Ofi"/>
+                    <navigationItem key="navigationItem" title="timeInterval" id="A4W-dE-Ofi"/>
                     <connections>
                         <outlet property="setupNavigationBar" destination="sKB-Xe-ftm" id="57N-17-QFx"/>
                         <outlet property="timerCountLabel" destination="Dcm-JB-czg" id="0Oz-zs-UXQ"/>
@@ -107,6 +107,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RN0-Q1-bCV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="su4-jv-NLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AFr-UL-mMm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cCX-wl-Hpc">
@@ -118,7 +119,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="93a-fY-fDe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="su4-jv-NLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>

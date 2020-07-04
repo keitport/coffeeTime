@@ -41,27 +41,30 @@ var count = 0
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.presentLoginViewController()
+        self.setupNavigation()
         
         if self.isLogin() == true{
         //ログイン状態の時はスキップ
         //ログインユーザーIDとログインユーザーのemailも取得できる
-        print("\(String(desctibing: Auth.auth().currentUser?.uid)):ログインユーザーのユーザーID")
+            print("\(String(Auth.auth().currentUser!.uid)):ログインユーザーのユーザーID")
             print("\(String(describing: Auth.auth().currentUser?.email)):ログインユーザーのemail")
         } else {
             // まだログインしていない時はログイン画面表示
             self.presentLoginViewController()
         }
     //ログイン認証されているかどうかを判定する関数
-        func isLogin() -> Bool{
-            // ログインしているユーザーがいるかどうかを判定
-            if Auth.auth().currentUser != nil {
-                return true
-            } else {
-                return false
-            }
-        }
+        
 
     }
+    func isLogin() -> Bool{
+        // ログインしているユーザーがいるかどうかを判定
+        if Auth.auth().currentUser != nil {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     
     func presentLoginViewController(){
         let loginVC = LoginViewController()
@@ -73,7 +76,7 @@ var count = 0
 
     @IBAction func timerStartButton(_ sender: Any) {
         timer.invalidate()
-        timer = timer.scheduledTimer(TimeInterval: 1,target: self, selector:#selector(ViewController.updateaTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1,target: self, selector:#selector(ViewController.updateTimer), userInfo: nil, repeats: true)
         
     }
     

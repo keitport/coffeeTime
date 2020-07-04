@@ -17,16 +17,16 @@ class LoginViewController: UIViewController {
         self.present(alertVC, animated: true, completion: nil)
     }
     
-    func signUpErrAlert(_error: NSError){
+    func signUpErrAlert(_ error: NSError){
         if let errCode = AuthErrorCode(rawValue: error.code){
             var message = ""
             switch errCode {
             case .invalidEmail:      message = "有効なメールアドレスを入力してください"
             case .emailAlreadyInUse: message = "既に登録されているメールアドレスです"
             case .weakPassword:      message = "パスワードは６文字以上で入してください"
-            default:                 message = "エラー\(error:.localizedDescription)"
+            default:                 message = "エラー\(error)"
             }
-            self.showeAlert(title: "登録できません", message: message)
+            self.showAlert(title: "登録できません", message: message)
         }
     }
     
@@ -35,10 +35,10 @@ class LoginViewController: UIViewController {
             var message = ""
             
             switch errCode {
-            case .useNotFound:   message = ""
-            case .wrongPassword: message = ""
-            case .userDisabled:  message = ""
-            case .invalidEmail:  message = ""
+            case .userNotFound:   message = "アカウントが見つかりませんでした"
+            case .wrongPassword: message = "パスワードを確認してください"
+            case .userDisabled:  message = "アカウントが無効になっています"
+            case .invalidEmail:  message = "Eメールが無効な形式です"
             default:             message = "エラー:\(error.localizedDescription)"
             }
             self.showAlert(title: "ログインできません", message: message)
@@ -56,18 +56,18 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-}
+
     
     @IBAction func tapSignUpButton(_ sender: Any) {
         guard let email = emailTextField.text, let password = passwordTextField.text else { return }
-        if email.isEmpty && password,isEmpty{
+        if email.isEmpty && password.isEmpty {
             self.showAlert(title:"エラー", message:"メールアドレスとパスワードを入力して下さい")
         } else if email.isEmpty {
             self.showAlert(title: "エラー", message:"メールアドレスを入力して下さい")
         } else if password.isEmpty {
             self.showAlert(title: "エラー", message:"パスワードを入力して下さい")
         } else {
-        self.emailTextField(email: email, password: password)
+        self.emailSignUp(email: email, password: password)
     }
 }
     
@@ -90,7 +90,7 @@ class LoginViewController: UIViewController {
     }
     
     func emailSignUp(email:String, password:String){
-        Auth.auth().createUser(withEmail: email, password){(result, error) in
+        Auth.auth().createUser(withEmail: email, password: password){(result, error) in
             if let error = error as NSError? {
                 self.signUpErrAlert(error)
             } else {
@@ -122,5 +122,5 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+
