@@ -92,7 +92,7 @@ var count = 0
                 timerCountLabel.text = String(count)
     }
     @objc func updateTimer(){
-        if count < 60 {
+        if count < 180 {
             count += 1
             timerCountLabel.text = String(count)
         }
