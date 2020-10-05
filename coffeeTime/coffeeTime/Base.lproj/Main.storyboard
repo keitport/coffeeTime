@@ -86,7 +86,9 @@
                                     <constraint firstAttribute="height" constant="68" id="6dC-wS-iuu"/>
                                     <constraint firstAttribute="width" constant="324" id="qgW-kX-dpB"/>
                                 </constraints>
-                                <string key="text">0.準備　コーヒー豆を挽き、フィルターを敷いたドリッパーに入れる。お湯を沸かす（目安温度：93°）</string>
+                                <string key="text">0.準備　コーヒー豆を挽き、フィルターを敷いた
+ドリッパーに入れる。
+お湯を沸かす（目安温度：93°）</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
