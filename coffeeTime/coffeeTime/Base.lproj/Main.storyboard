@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--コラム-->
         <scene sceneID="P8k-Vr-udI">
             <objects>
                 <viewController id="EDk-Fb-VFm" sceneMemberID="viewController">
@@ -17,30 +17,135 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="コーヒーの役割" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bp-uv-aG7">
-                                <rect key="frame" x="118" y="110" width="178" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-jn-z6Z">
+                                <rect key="frame" x="28" y="222" width="358" height="493"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="LiI-sQ-L2Q"/>
+                                    <constraint firstAttribute="height" constant="493" id="Rx1-zE-Ocx"/>
+                                </constraints>
+                                <mutableString key="text">　珈琲は、生きていく上でかならずしも必要なものというわけではありません。しかし、人間らしく、豊かに生きるためにはとても大切な嗜好品だと思います。　感情というよりも、理性に働くもの。思考を深め、人と語らう時には心を通わせ、穏やかな気持ちを作り出すのが珈琲です。さらに魅力的なのは。暗い感情にも寄り添ってくれるその気質でしょう。溜息をつく時間であったり、感情を咀嚼して想いに耽る時間であったり、珈琲は弱り、乱れた心を鎮める時間をより一層深いものにしてくれます。
+　極端にいってしまうと、珈琲屋として自分達が作っているのは「弱者への嗜好品」とさえ思っております。強い人でも弱ることも必ずあります。走っていれば疲れるし、気持ちが荒むことも、孤独感や虚無感を感じる時もあるでしょう。そんな時は足を止めて、丁寧に珈琲を淹れ、味わっていただきたい。どんな時も冷静さと落ち着きをもたらせてくれます。珈琲を暮らしに取り入れることで、感情の起伏がなだやかになり、穏やかな心を保ちやすくなるのではないでしょうか。 出典：蕪木祐介『珈琲の表現』、雷鳥社、2019年、12頁</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-jn-z6Z">
-                                <rect key="frame" x="28" y="175" width="358" height="372"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">　珈琲は、生きていく上でかならずしも必要なものというわけではありません。しかし、人間らしく、豊かに生きるためにはとても大切な嗜好品だと思います。　感情というよりも、理性に働くもの。思考を深め、人と語らう時には心を通わせ、穏やかな気持ちを作り出すのが珈琲です。</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コーヒーの役割" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bp-uv-aG7">
+                                <rect key="frame" x="98" y="156" width="218" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I0A-Zh-Gsa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I0A-Zh-Gsa" firstAttribute="trailing" secondItem="3bp-uv-aG7" secondAttribute="trailing" constant="98" id="2eV-gi-haN"/>
+                            <constraint firstItem="3bp-uv-aG7" firstAttribute="top" secondItem="I0A-Zh-Gsa" secondAttribute="top" constant="68" id="4iH-4s-soM"/>
+                            <constraint firstItem="Kpd-jn-z6Z" firstAttribute="top" secondItem="3bp-uv-aG7" secondAttribute="bottom" constant="30" id="M4f-w7-SFm"/>
+                            <constraint firstItem="Kpd-jn-z6Z" firstAttribute="leading" secondItem="I0A-Zh-Gsa" secondAttribute="leading" constant="28" id="abS-kj-Wui"/>
+                            <constraint firstItem="3bp-uv-aG7" firstAttribute="leading" secondItem="I0A-Zh-Gsa" secondAttribute="leading" constant="98" id="dKR-sN-ZRi"/>
+                            <constraint firstItem="I0A-Zh-Gsa" firstAttribute="trailing" secondItem="Kpd-jn-z6Z" secondAttribute="trailing" constant="28" id="tD0-ca-DfV"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="v7V-lC-Hgr"/>
+                    <tabBarItem key="tabBarItem" title="コラム" image="text.book.closed" catalog="system" id="v7V-lC-Hgr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXY-Ld-pxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1947.826086956522" y="805.58035714285711"/>
+        </scene>
+        <!--オススメアイテム-->
+        <scene sceneID="tqq-GR-0MI">
+            <objects>
+                <viewController id="Czn-kO-0DY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LFh-N3-CKR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="harioimages" translatesAutoresizingMaskIntoConstraints="NO" id="Hp0-U5-Cgq">
+                                <rect key="frame" x="29" y="162" width="180" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hario pepar" translatesAutoresizingMaskIntoConstraints="NO" id="gqU-5U-3gN">
+                                <rect key="frame" x="42" y="646" width="154" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ドリッパー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkN-uP-X6z">
+                                <rect key="frame" x="157" y="110" width="102" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3D-q3-HSU">
+                                <rect key="frame" x="200" y="147" width="182" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <string key="text" base64-UTF8="YES">
+44Oh44O844Kr44O877ya44OP44Oq44KqDeWApOaute+8mhEzNTflhobigKjnibnlvrTvvJpW5Z6L5YaG
+44GZ44GE5b2i44Gu44OJ44Oq44OD44OR44O844Gv44CB54+I55Cy44Gu5bGk44GM5rex44GP44CB54+I
+55Cy57KJ44Gr5rOo44GE44Gg44GK5rmv44GM5YaG44GZ44GE44Gu6aCC54K544Gr5ZCR44GL44Gj44Gm
+5rWB44KM44KL44Gu44Gn6LGG44Gu5peo5ZGz44KS44GX44Gj44GL44KK44Go5oq95Ye644CCA
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyy-WH-w3M">
+                                <rect key="frame" x="200" y="377" width="182" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <string key="text" base64-UTF8="YES">
+44Oh44O844Kr44O877ya44OP44Oq44KqDeWApOaute+8mhE3MjLlhobigKjnibnlvrTvvJrjg5Xjgr/j
+gpLjgZfjgZ/jgb7jgb7pm7vlrZDjg6zjg7PjgrhPS+OAguOCpuOCp+ODvOODluW9oueKtuOBruaMgeOB
+oeOChOOBmeOBhOWPluOBo+aJi+OBp+OBmeOAgua4qeOBi+OBleOCkuS/neOBpuOCi+OCiOOBhuOBq+OA
+geODhuODvOODluODq+OBqOOBruaOpeinpumdouOBruWwkeOBquOBhOOCrOODqeOCueW9oueKtuOAgg
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ペーパードリッパー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4y-vY-2GK">
+                                <rect key="frame" x="116" y="597" width="184" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="コーヒーサーバー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLB-2K-Kbb">
+                                <rect key="frame" x="126" y="345" width="164" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="serverimages" translatesAutoresizingMaskIntoConstraints="NO" id="FB8-K9-6Pi">
+                                <rect key="frame" x="37" y="392" width="164" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzS-b8-9PV">
+                                <rect key="frame" x="200" y="631" width="182" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <string key="text" base64-UTF8="YES">
+44Oh44O844Kr44O877ya44OP44Oq44KqDeWApOaute+8mhEyOTflhobigKjnibnlvrTvvJrmt7HjgYTn
+j4jnkLLnsonjga7lsaTjgYzjgafjgY3jgIHms6jjgYzjgozjgZ/jgYrmua/jgYzkuK3lv4PjgavlkJHj
+gYvjgaPjgabmtYHjgozjgovjgZPjgajjgavjgojjgornj4jnkLLnsonjgavplbfjgY/op6bjgozjgIHm
+iJDliIbjgpLjgojjgormir3lh7rjgZnjgovjgZPjgajjgYzjgafjgY3jgovjgII
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rfJ-Cl-Xn7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="オススメアイテム" image="cart" catalog="system" id="880-x5-efO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Au-P7-PY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947.826086956522" y="1500.6696428571429"/>
         </scene>
         <!--timeInterval-->
         <scene sceneID="tne-QT-ifu">
@@ -211,7 +316,9 @@ jeOCieOBquOBhOOAghEoMTgw56eS5Lul5YaF44Gr5rOo44GQ44Gu44GMQmVzdCk
                             <constraint firstItem="PcK-H1-DkO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="z7q-Z0-58P"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="L5r-Jx-E0J"/>
+                    <tabBarItem key="tabBarItem" title="タイマー" image="stopwatch" catalog="system" id="L5r-Jx-E0J">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="timeInterval" id="A4W-dE-Ofi"/>
                     <connections>
                         <outlet property="setupNavigationBar" destination="sKB-Xe-ftm" id="57N-17-QFx"/>
@@ -248,11 +355,13 @@ jeOCieOBquOBhOOAghEoMTgw56eS5Lul5YaF44Gr5rOo44GQ44Gu44GMQmVzdCk
                     <navigationItem key="navigationItem" id="2dp-Eh-ATz"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o1M-2e-EKK">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="31p-aM-zye"/>
                         <segue destination="EDk-Fb-VFm" kind="relationship" relationship="viewControllers" id="d9k-cn-KDs"/>
+                        <segue destination="Czn-kO-0DY" kind="relationship" relationship="viewControllers" id="J2T-qo-BV4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="onf-JV-fGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -261,6 +370,12 @@ jeOCieOBquOBhOOAghEoMTgw56eS5Lul5YaF44Gr5rOo44GQ44Gu44GMQmVzdCk
         </scene>
     </scenes>
     <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="hario pepar" width="272" height="272"/>
+        <image name="harioimages" width="336" height="336"/>
+        <image name="serverimages" width="336" height="336"/>
+        <image name="stopwatch" catalog="system" width="121" height="128"/>
+        <image name="text.book.closed" catalog="system" width="115" height="128"/>
         <systemColor name="separatorColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
