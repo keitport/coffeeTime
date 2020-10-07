@@ -9,6 +9,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="P8k-Vr-udI">
+            <objects>
+                <viewController id="EDk-Fb-VFm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VGi-JF-f6K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="コーヒーの役割" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bp-uv-aG7">
+                                <rect key="frame" x="118" y="110" width="178" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-jn-z6Z">
+                                <rect key="frame" x="28" y="175" width="358" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">　珈琲は、生きていく上でかならずしも必要なものというわけではありません。しかし、人間らしく、豊かに生きるためにはとても大切な嗜好品だと思います。　感情というよりも、理性に働くもの。思考を深め、人と語らう時には心を通わせ、穏やかな気持ちを作り出すのが珈琲です。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I0A-Zh-Gsa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="v7V-lC-Hgr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXY-Ld-pxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947.826086956522" y="805.58035714285711"/>
+        </scene>
         <!--timeInterval-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,8 +50,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKB-Xe-ftm">
+                                <rect key="frame" x="0.0" y="36" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="coffee Time" id="dHn-ej-Ymy"/>
+                                </items>
+                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcm-JB-czg">
-                                <rect key="frame" x="87" y="174" width="240" height="80"/>
+                                <rect key="frame" x="87" y="125" width="240" height="80"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="5fq-Pl-FlW"/>
@@ -29,7 +69,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owk-t5-C3z">
-                                <rect key="frame" x="274" y="304" width="120" height="60"/>
+                                <rect key="frame" x="274" y="255" width="120" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="0H5-cG-VYe"/>
@@ -44,7 +84,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcK-H1-DkO">
-                                <rect key="frame" x="147" y="374" width="120" height="60"/>
+                                <rect key="frame" x="147" y="325" width="120" height="60"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Efe-gq-bBj"/>
@@ -59,7 +99,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93z-D3-BJj">
-                                <rect key="frame" x="20" y="304" width="120" height="60"/>
+                                <rect key="frame" x="20" y="255" width="120" height="60"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Tyy-AM-pED"/>
@@ -73,15 +113,8 @@
                                     <action selector="timerStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Mg-0W-1Xp"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKB-Xe-ftm">
-                                <rect key="frame" x="0.0" y="36" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="coffee Time" id="dHn-ej-Ymy"/>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWa-gd-uC2">
-                                <rect key="frame" x="45" y="528" width="324" height="68"/>
+                                <rect key="frame" x="45" y="479" width="324" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="6dC-wS-iuu"/>
                                     <constraint firstAttribute="width" constant="324" id="qgW-kX-dpB"/>
@@ -94,7 +127,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoE-wX-bnm">
-                                <rect key="frame" x="45" y="616" width="324" height="68"/>
+                                <rect key="frame" x="45" y="567" width="324" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="324" id="gND-WR-Rkr"/>
                                     <constraint firstAttribute="height" constant="68" id="obi-fL-2Na"/>
@@ -110,7 +143,7 @@ govjgbnjgZcpA
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6f-qr-Xum">
-                                <rect key="frame" x="45" y="704" width="324" height="68"/>
+                                <rect key="frame" x="45" y="655" width="324" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="324" id="7Bm-9h-CoV"/>
                                     <constraint firstAttribute="height" constant="68" id="7hE-bS-AGh"/>
@@ -126,13 +159,13 @@ uK3lv4Ppg6jjgbjjgajmuKbjgpLlt7vjgY3jgarjgYzjgonms6jjgZAR44CCA
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美味しいコーヒードリップ手順" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8A-zi-hCP">
-                                <rect key="frame" x="64" y="484" width="286" height="24"/>
+                                <rect key="frame" x="64" y="435" width="286" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmF-zT-g9A">
-                                <rect key="frame" x="45" y="794" width="324" height="68"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmF-zT-g9A">
+                                <rect key="frame" x="45" y="743" width="324" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="324" id="fhp-zP-a1P"/>
                                     <constraint firstAttribute="height" constant="68" id="lHg-y2-JQa"/>
@@ -170,14 +203,15 @@ jeOCieOBquOBhOOAghEoMTgw56eS5Lul5YaF44Gr5rOo44GQ44Gu44GMQmVzdCk
                             <constraint firstItem="W6f-qr-Xum" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="fYJ-jC-rSB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X8A-zi-hCP" secondAttribute="trailing" constant="64" id="kfV-S3-dok"/>
                             <constraint firstItem="QmF-zT-g9A" firstAttribute="top" secondItem="W6f-qr-Xum" secondAttribute="bottom" constant="20" id="mcw-Ha-5d3"/>
+                            <constraint firstItem="Dcm-JB-czg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="nOW-Fd-Fdt"/>
                             <constraint firstItem="W6f-qr-Xum" firstAttribute="top" secondItem="uoE-wX-bnm" secondAttribute="bottom" constant="20" id="swh-PB-WJN"/>
                             <constraint firstItem="Dcm-JB-czg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="tqJ-96-cIf"/>
                             <constraint firstItem="owk-t5-C3z" firstAttribute="top" secondItem="Dcm-JB-czg" secondAttribute="bottom" constant="50" id="v2l-qP-MUq"/>
                             <constraint firstItem="FWa-gd-uC2" firstAttribute="top" secondItem="X8A-zi-hCP" secondAttribute="bottom" constant="20" id="x7O-Ka-0YL"/>
                             <constraint firstItem="PcK-H1-DkO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="z7q-Z0-58P"/>
-                            <constraint firstItem="Dcm-JB-czg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="zgJ-80-ge2"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="L5r-Jx-E0J"/>
                     <navigationItem key="navigationItem" title="timeInterval" id="A4W-dE-Ofi"/>
                     <connections>
                         <outlet property="setupNavigationBar" destination="sKB-Xe-ftm" id="57N-17-QFx"/>
@@ -186,7 +220,7 @@ jeOCieOBquOBhOOAghEoMTgw56eS5Lul5YaF44Gr5rOo44GQ44Gu44GMQmVzdCk
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1947.826086956522" y="138.61607142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RN0-Q1-bCV">
@@ -199,12 +233,31 @@ jeOCieOBquOBhOOAghEoMTgw56eS5Lul5YaF44Gr5rOo44GQ44Gu44GMQmVzdCk
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="93a-fY-fDe"/>
+                        <segue destination="cVu-Z6-tYt" kind="relationship" relationship="rootViewController" id="93a-fY-fDe"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="su4-jv-NLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LPD-gB-aIZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cVu-Z6-tYt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="2dp-Eh-ATz"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o1M-2e-EKK">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="31p-aM-zye"/>
+                        <segue destination="EDk-Fb-VFm" kind="relationship" relationship="viewControllers" id="d9k-cn-KDs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="onf-JV-fGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>
